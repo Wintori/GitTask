@@ -1,0 +1,29 @@
+{{#if isImage}}
+  {{#if status}}
+    <img
+      class="chat__messages__message-photo__status"
+      src="{{statusViewed}}"
+      alt=""
+    />
+  {{else}}
+    <img
+      class="chat__messages__message-photo__status"
+      src="{{statusCheckImage}}"
+      alt=""
+    />
+  {{/if}}
+{{else}}
+  {{#if status}}
+    <img
+      class="chat__messages__message-text__status"
+      src="{{statusViewed}}"
+      alt=""
+    />
+  {{else}}
+    <img
+      class="chat__messages__message-text__status"
+      src="{{statusCheck}}"
+      alt=""
+    />
+  {{/if}}
+{{/if}}

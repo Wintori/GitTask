@@ -1,0 +1,18 @@
+<section class="chat-bar">
+  {{{buttonProfile}}}
+  <div class="chat-bar__search-box">
+    {{{inputSearch}}}
+    {{{buttonCreate}}}
+    {{{buttonOptions}}}
+    {{{popupOptions}}}
+  </div>
+  <ul class="chat-bar__chat-list">
+    {{#if barMessages}}
+      {{#each barMessagesComponent}}
+        {{{this}}}
+      {{/each}}
+    {{else}}
+      Нет сообщений
+    {{/if}}
+  </ul>
+</section>
